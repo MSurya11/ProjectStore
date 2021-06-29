@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Store</title>
+</head>
+<body class="text-light" style="background-image: url(./assets/Images/homebg.jpg); background-repeat: no-repeat; background-size: cover;">
+  <!--Title-->
+  <div class="container-fluid">
+    
+  <!--NavBar-->
+    <ul class="nav nav-tabs bg-primary rounded" >
+      <li>
+        <a routerLink="/home"><div class="bg-dark rounded" style="padding: 7px;">
+          <h1 class="text-center text-light"><i class="fas fa-store"></i>Project Store</h1>
+        </div></a>
+      </li>
+      <li class="nav-item ">
+          <a routerLink="/home" class="nav-link text-light" style="margin-top: 30px;"><i class="fas fa-home"></i>Home</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a routerLink="/home" class="nav-link text-light dropdown-toggle" style="margin-top: 30px;" role="button" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"><i class="fas fa-sitemap"></i>Categories</a>
+          <div class="dropdown-menu">
+              <a routerLink="/items-type/mobiles" class="dropdown-item">Mobiles</a>
+              <a routerLink="/items-type/laptops" class="dropdown-item">Laptops</a>
+              <a routerLink="/items-type/toys" class="dropdown-item">Toys</a>
+              <a routerLink="/items-type/headphones" class="dropdown-item">Headphones</a>
+              <a routerLink="/items-type/sports" class="dropdown-item">Sports</a>
+          </div>
+      </li>
+      
+      <li class="nav-item">
+          <a routerLink="/about-us" class="nav-link text-light" style="margin-top: 30px;"><i class="fas fa-address-card"></i>About Us</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/cart" class="nav-link text-light" style="margin-top: 30px;"><i class="fas fa-shopping-cart"></i>Cart</a>
+      </li>
+      <li class="nav" style="float: right;">
+        <div class="input-group" style="margin-top: 30px;">
+          <div class="form-outline">
+            <input id="search-input" type="search" id="form1" class="form-control" placeholder="Search" />
+            
+          </div>
+          <button style="height: 1cm;" id="search-button" type="button" class="btn btn-success">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </li>  
+      <div style="display: flex; margin-left: 200px; margin-top: 30px;">  
+      <li class="nav-item rounded">
+        <a routerLink="/login" class="nav-link text-light bg-danger rounded"><i class="fas fa-sign-in-alt"></i>Login</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/signup" class="nav-link text-light bg-danger rounded"><i class="fas fa-user"></i>SignUp</a>
+      </li>
+      </div> 
+  </ul>
+
+  <router-outlet></router-outlet>
+  </div>
+</body>
+<div><app-footer></app-footer></div>
+</html>
